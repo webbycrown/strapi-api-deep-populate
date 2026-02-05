@@ -1,0 +1,56 @@
+{
+    "name": "@webby-crown/strapi-api-deep-populate",
+    "version": "1.0.0",
+    "description": "Auto-populate images, relations, and nested components based on settings",
+    "main": "dist/strapi-server.js",
+    "files": [
+        "dist"
+    ],
+    "scripts": {
+        "build": "npm run clean && npm run build:admin && npm run build:server && npm run copy:entries",
+        "build:admin": "webpack --config webpack.config.js",
+        "build:server": "webpack --config webpack.server.config.js",
+        "copy:entries": "copyfiles \"strapi-admin.js\" \"dist/\" && copyfiles \"dist/strapi-server.js\" \"dist/\"",
+        "clean": "rimraf dist",
+        "prepublishOnly": "npm run clean && npm run build",
+        "prepare": "npm run build"
+    },
+    "keywords": [
+        "strapi",
+        "plugin",
+        "api",
+        "populate",
+        "images",
+        "relations",
+        "components",
+        "auto-populate"
+    ],
+    "author": "Webby Crown",
+    "license": "MIT",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/Webby-Crown/strapi-api-deep-populate.git"
+    },
+    "bugs": {
+        "url": "https://github.com/Webby-Crown/strapi-api-deep-populate/issues"
+    },
+    "homepage": "https://github.com/Webby-Crown/strapi-api-deep-populate#readme",
+    "devDependencies": {
+        "@babel/core": "^7.22.0",
+        "@babel/preset-env": "^7.22.0",
+        "@babel/preset-react": "^7.22.0",
+        "babel-loader": "^9.1.0",
+        "copyfiles": "^2.4.1",
+        "rimraf": "^5.0.0",
+        "webpack": "^5.88.0",
+        "webpack-cli": "^5.1.0"
+    },
+    "peerDependencies": {
+        "@strapi/strapi": "^4.0.0"
+    },
+    "strapi": {
+        "name": "strapi-api-deep-populate",
+        "description": "Auto-populate images, relations, and nested components based on settings",
+        "kind": "plugin"
+    }
+}
