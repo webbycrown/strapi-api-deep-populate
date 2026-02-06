@@ -10,6 +10,9 @@ module.exports = {
       type: 'commonjs2',
     },
   },
+  optimization: {
+    splitChunks: false,
+  },
   module: {
     rules: [
       {
