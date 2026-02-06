@@ -6,7 +6,10 @@ node_modules/
 build/
 .cache/
 .tmp/
-dist/
+
+# Source folders (not needed for distribution)
+admin/
+server/
 
 
 # Environment and local config

@@ -11,13 +11,11 @@
         "README.md"
     ],
     "scripts": {
-        "build": "npm run clean && npm run build:admin && npm run build:server && npm run copy:entries",
+        "build": "npm run clean && npm run build:admin && npm run build:server",
         "build:admin": "webpack --config webpack.config.js",
         "build:server": "webpack --config webpack.server.config.js",
-        "copy:entries": "copyfiles \"strapi-admin.js\" \"dist/\" && copyfiles \"dist/strapi-server.js\" \"dist/\"",
         "clean": "rimraf dist",
-        "prepublishOnly": "npm run clean && npm run build",
-        "prepare": "npm run build"
+        "prepublishOnly": "npm run clean && npm run build"
     },
     "keywords": [
         "strapi",
