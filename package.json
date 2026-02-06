@@ -50,7 +50,7 @@
         "webpack-cli": "^5.1.0"
     },
     "peerDependencies": {
-        "@strapi/strapi": "^4.0.0 || ^5.0.0"
+        "@strapi/strapi": "^5.0.0"
     },
     "strapi": {
         "name": "strapi-api-deep-populate",
