@@ -43,6 +43,8 @@
         "@babel/preset-react": "^7.22.0",
         "babel-loader": "^9.1.0",
         "copyfiles": "^2.4.1",
+        "react": "^19.2.4",
+        "react-dom": "^19.2.4",
         "rimraf": "^5.0.0",
         "webpack": "^5.88.0",
         "webpack-cli": "^5.1.0"
@@ -53,6 +55,8 @@
     "strapi": {
         "name": "strapi-api-deep-populate",
         "description": "Auto-populate images, relations, and nested components based on settings",
-        "kind": "plugin"
+        "kind": "plugin",
+        "admin": "strapi-admin.js",
+        "server": "strapi-server.js"
     }
 }
