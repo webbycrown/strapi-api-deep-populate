@@ -19,6 +19,12 @@ This plugin solves the "partial population" headache in Strapi by allowing you t
 npm install @webbycrown/strapi-api-deep-populate
 ```
 
+### From GitHub (Development/Direct Install)
+
+```bash
+npm install https://github.com/Webby-Crown/strapi-api-deep-populate.git
+```
+
 ### Enable in Strapi
 
 Add the plugin to your `config/plugins.js`:

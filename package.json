@@ -27,7 +27,7 @@
         "images",
         "relations",
         "components",
-        "auto-populate"
+        "strapi-api-deep-populate"
     ],
     "author": "Webby Crown",
     "license": "MIT",

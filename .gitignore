@@ -6,13 +6,7 @@ node_modules/
 build/
 .cache/
 .tmp/
-admin/
-server/
-
-!dist/
-!dist/uploads/
-!dist/admin/
-!dist/server/
+dist/
 
 
 # Environment and local config
