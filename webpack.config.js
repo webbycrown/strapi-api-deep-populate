@@ -1,7 +1,4 @@
-
-
 const path = require('path');
-const webpack = require('webpack');
 
 module.exports = {
   mode: 'production',
@@ -9,23 +6,15 @@ module.exports = {
   output: {
     path: path.resolve(__dirname, 'dist/admin'),
     filename: 'index.js',
-    // Strapi 5 requires the admin bundle to be an ES Module
     library: {
       type: 'module',
     },
-    // Ensures assets are resolved correctly within the Strapi admin
     publicPath: 'auto',
   },
-  // Required by Webpack 5 to support the 'module' library type
   experiments: {
     outputModule: true,
   },
-  plugins: [
-    // This forces all code into a single index.js file to avoid missing chunks
-    new webpack.optimize.LimitChunkCountPlugin({
-      maxChunks: 1,
-    }),
-  ],
+  // ✅ REMOVED the LimitChunkCountPlugin to allow code splitting
   module: {
     rules: [
       {
@@ -41,16 +30,11 @@ module.exports = {
           },
         },
       },
-      {
-        test: /\.css$/i,
-        use: ['style-loader', 'css-loader'],
-      },
     ],
   },
   resolve: {
     extensions: ['.js', '.jsx'],
   },
-  // These libraries are provided by the Strapi host app; do not bundle them
   externals: {
     react: 'react',
     'react-dom': 'react-dom',
