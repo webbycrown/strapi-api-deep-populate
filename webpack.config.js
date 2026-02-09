@@ -1,4 +1,5 @@
 const path = require('path');
+const webpack = require('webpack');
 
 module.exports = {
   mode: 'production',
@@ -14,7 +15,12 @@ module.exports = {
   experiments: {
     outputModule: true,
   },
-  // ✅ REMOVED the LimitChunkCountPlugin to allow code splitting
+  plugins: [
+    // ✅ Force everything into ONE file
+    new webpack.optimize.LimitChunkCountPlugin({
+      maxChunks: 1,
+    }),
+  ],
   module: {
     rules: [
       {
@@ -39,10 +45,8 @@ module.exports = {
     react: 'react',
     'react-dom': 'react-dom',
     'react/jsx-runtime': 'react/jsx-runtime',
-    'react-router-dom': 'react-router-dom',
     '@strapi/strapi/admin': '@strapi/strapi/admin',
     '@strapi/design-system': '@strapi/design-system',
     '@strapi/icons': '@strapi/icons',
-    'styled-components': 'styled-components',
   },
 };
