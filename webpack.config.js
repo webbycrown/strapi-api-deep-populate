@@ -54,6 +54,7 @@ module.exports = {
   externals: {
     react: 'react',
     'react-dom': 'react-dom',
+    'react/jsx-runtime': 'react/jsx-runtime',
     'react-router-dom': 'react-router-dom',
     '@strapi/strapi/admin': '@strapi/strapi/admin',
     '@strapi/design-system': '@strapi/design-system',
