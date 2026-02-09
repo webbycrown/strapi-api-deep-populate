@@ -1,4 +1,4 @@
-// strapi-admin.js
+// strapi-admin.j
 "use strict";
 
 import admin from "./dist/admin/index.js";
