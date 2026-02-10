@@ -47,7 +47,9 @@
     "homepage": "https://github.com/Webby-Crown/strapi-api-deep-populate#readme",
   
     "peerDependencies": {
-      "@strapi/strapi": "^5.0.0"
+      "@strapi/strapi": "^5.0.0",
+      "react": "^18.0.0",
+      "react-dom": "^18.0.0"
     },
   
   "devDependencies": {

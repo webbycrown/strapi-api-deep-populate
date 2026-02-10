@@ -1,4 +1,2 @@
-// strapi-admin.j
-"use strict";
-
-module.exports = require('./dist/admin/index.js');
+// strapi-admin.js
+export { default } from './dist/admin/index.js';

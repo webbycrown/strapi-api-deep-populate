@@ -40,8 +40,14 @@ module.exports = {
   },
   resolve: {
     extensions: ['.js', '.jsx'],
+    // Ensure we resolve React from node_modules
+    modules: ['node_modules', path.resolve(__dirname, 'node_modules')],
   },
+  externalsType: 'module',
   externals: {
+    'react': 'react',
+    'react-dom': 'react-dom',
+    'react/jsx-runtime': 'react/jsx-runtime',
     '@strapi/strapi/admin': '@strapi/strapi/admin',
     '@strapi/design-system': '@strapi/design-system',
     '@strapi/icons': '@strapi/icons',
