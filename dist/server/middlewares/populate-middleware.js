@@ -2,7 +2,6 @@
 
 module.exports = (config, { strapi }) => {
   return async (ctx, next) => {
-    console.log("Middleware called");
     // 1. Updated check: Allow both GET and POST methods for API requests
     const allowedMethods = ["GET", "POST"];
 
