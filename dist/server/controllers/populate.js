@@ -13,7 +13,10 @@ module.exports = ({ strapi }) => ({
       const response = {};
 
       Object.keys(contentTypes).forEach((uid) => {
-        if (uid.startsWith("api::") || uid.startsWith("plugin::")) {
+        if (
+          uid.startsWith("api::") ||
+          uid.startsWith("plugin::webbycommerce.")
+        ) {
           // Get the friendly name from the Content-Type info
           const displayName = contentTypes[uid].info.displayName;
 
