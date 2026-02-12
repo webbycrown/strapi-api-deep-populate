@@ -60,7 +60,7 @@ By default, Strapi REST APIs return a "shallow" response. With this plugin enabl
 ### Plugin Not Showing
 
 - Verify the location: Navigate to Settings and look under the Global Settings section in the left sidebar.
-- Check config/plugins.js: Ensure the plugin is enabled or not.
+- Check config/middlewares.js: Ensure the plugin is enabled or not.
 - Rebuild Admin: Run npm run build followed by npm run develop to recompile the admin panel with the new settings UI.
 
 ---
