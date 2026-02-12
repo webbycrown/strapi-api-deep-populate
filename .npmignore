@@ -1,0 +1,12 @@
+node_modules/
+src/
+admin/
+server/
+scripts/
+*.log
+.DS_Store
+.env*
+.git/
+.gitignore
+README.md
+.cache/

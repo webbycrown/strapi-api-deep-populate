@@ -1,0 +1,14 @@
+{
+  "kind": "singleType",
+  "collectionName": "hello_plugin_settings",
+  "info": {
+    "singularName": "hello-plugin-setting",
+    "pluralName": "hello-plugin-settings",
+    "displayName": "Hello Plugin Settings"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {}
+}

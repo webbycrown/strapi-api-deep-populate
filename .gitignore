@@ -1,31 +1,11 @@
-# Dependencies
 node_modules/
-
-
-# Builds and bundles
 build/
-.cache/
-.tmp/
-
-# Source folders (not needed for distribution)
-admin/
-server/
-
-
-# Environment and local config
-.env
-.env.*  
-.eslintcache
-.turbo/
-.npmignore
-
-# Editors / OS
 .DS_Store
-Thumbs.db
-.idea/
-.vscode/
+*.log
+.env*
+.cache/
 
-# Logs
-npm-debug.log*
-yarn-error.log*
-pnpm-debug.log*
+# If you want the repo to contain only compiled output, ignore source folders (root only):
+/admin/
+/server/
+/scripts/
