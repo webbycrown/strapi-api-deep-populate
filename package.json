@@ -1,5 +1,5 @@
 {
-  "name": "strapi-plugin-api-deep-populate",
+  "name": "@webbycrown/strapi-plugin-api-deep-populate",
   "version": "1.0.0",
   "description": "Strapi API Deep Populate plugin",
   "strapi": {
