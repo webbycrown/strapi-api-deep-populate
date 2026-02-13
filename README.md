@@ -16,7 +16,7 @@ This plugin solves the "partial population" headache in Strapi by allowing you t
 ### From NPM (Published Package)
 
 ```bash
-npm install @webbycrown/strapi-api-deep-populate
+npm i @webbycrown/strapi-plugin-api-deep-populate
 ```
 
 ### From GitHub (Development/Direct Install)
@@ -67,9 +67,14 @@ By default, Strapi REST APIs return a "shallow" response. With this plugin enabl
 
 ## 📜 Changelog
 
+### [1.0.1] – Patch Release
+
+Updated README documentation
+
 ### [1.0.0] – Initial Stable Release
 
 🎉 First production-ready release of Strapi API Deep Populate. This plugin provides an automated solution for handling complex data population, ensuring that your API responses include nested media, relations, and components by default.
+
 
 ✨ Added
 
